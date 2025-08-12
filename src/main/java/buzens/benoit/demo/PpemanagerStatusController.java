@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class PpemanagerStatusController {
-    Logger logger = LoggerFactory.getLogger(PpemanagerApplication.class);
+    Logger logger = LoggerFactory.getLogger(PpemanagerStatusController.class);
 
     @GetMapping(value = "/status")
     public String status() {
