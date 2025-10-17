@@ -1,13 +1,12 @@
-package buzens.benoit.demo.services.implementations;
-
-import buzens.benoit.demo.model.PersonalProtectiveEquipementItem;
-import buzens.benoit.demo.services.PersonalProtectiveEquipementItemsService;
+package buzens.benoit.demo.domain.services;
+import buzens.benoit.demo.applicationInterfaces.PersonalProtectiveEquipementItemsInterface;
+import buzens.benoit.demo.domain.model.PersonalProtectiveEquipementItem;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
 @Service
-public class PersonalProtectiveEquipementItemsServiceImplementation implements PersonalProtectiveEquipementItemsService {
+public class PersonalProtectiveEquipementItemsServices implements PersonalProtectiveEquipementItemsInterface {
     public ArrayList<PersonalProtectiveEquipementItem> getPersonalProtectiveEquipementItemsService(){
         ArrayList<PersonalProtectiveEquipementItem> personalProtectiveEquipementItems = new ArrayList<>();
         personalProtectiveEquipementItems.add(new PersonalProtectiveEquipementItem());

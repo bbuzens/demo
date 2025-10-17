@@ -1,6 +1,6 @@
 package buzens.benoit.demo.controllers;
 
-import buzens.benoit.demo.services.PersonalProtectiveEquipementItemsService;
+import buzens.benoit.demo.applicationInterfaces.PersonalProtectiveEquipementItemsInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class PersonalProtectiveEquipementManagerItemsController {
     Logger logger = LoggerFactory.getLogger(PersonalProtectiveEquipementManagerItemsController.class);
 
-    private final PersonalProtectiveEquipementItemsService personalProtectiveEquipementItemsService;
+    private final PersonalProtectiveEquipementItemsInterface personalProtectiveEquipementItemsInterface;
 
-    public PersonalProtectiveEquipementManagerItemsController(PersonalProtectiveEquipementItemsService personalProtectiveEquipementItemsService) {
-        this.personalProtectiveEquipementItemsService = personalProtectiveEquipementItemsService;
+    public PersonalProtectiveEquipementManagerItemsController(PersonalProtectiveEquipementItemsInterface personalProtectiveEquipementItemsInterface) {
+        this.personalProtectiveEquipementItemsInterface = personalProtectiveEquipementItemsInterface;
     }
 
     @GetMapping("/get")
     public String getPersonalProtectiveEquipementItems(){
         logger.info("getItems");
-        return personalProtectiveEquipementItemsService.getPersonalProtectiveEquipementItemsService().toString();
+        return personalProtectiveEquipementItemsInterface.getPersonalProtectiveEquipementItemsService().toString();
     }
 }
