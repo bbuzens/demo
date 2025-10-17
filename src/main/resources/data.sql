@@ -1,0 +1,2 @@
+INSERT INTO PERSONAL_PROTECTIVE_EQUIPEMENT_ITEMS_ENTITY (id, manufacturer, model) VALUES (1, 'Petzl', 'Reverso');
+INSERT INTO PERSONAL_PROTECTIVE_EQUIPEMENT_ITEMS_ENTITY (id, manufacturer, model) VALUES (2, 'Beal', 'Dynaloop');
