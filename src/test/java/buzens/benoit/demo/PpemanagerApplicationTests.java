@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class PpemanagerApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void contextLoads() { // Contexte loader to initialize test configuration (data, mock services ...) - No Context to load for now...
 	}
 
 }
