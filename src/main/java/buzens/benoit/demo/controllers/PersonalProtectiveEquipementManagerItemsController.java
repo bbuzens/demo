@@ -1,6 +1,7 @@
 package buzens.benoit.demo.controllers;
 
 import buzens.benoit.demo.applicationInterfaces.PersonalProtectiveEquipementItemsInterface;
+import io.swagger.v3.oas.annotations.Operation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +19,7 @@ public class PersonalProtectiveEquipementManagerItemsController {
         this.personalProtectiveEquipementItemsInterface = personalProtectiveEquipementItemsInterface;
     }
 
+    @Operation(summary = "Retourner tous les items connus et leurs informations")
     @GetMapping("/get")
     public String getPersonalProtectiveEquipementItems(){
         logger.info("getItems");
